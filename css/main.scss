@@ -45,6 +45,34 @@ form, input, button {
     margin: 0 auto;
     margin-bottom: 100px;
 }
+
+
+.nav-item{
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+   
+}
+
+.nav-item::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: #e6a596;
+    transition: width .3s;
+}
+
+.nav-item:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
 @media (max-width:950px) {
     .page-section {
         width: 85%;

@@ -59,6 +59,31 @@ form, input, button {
   margin-bottom: 100px;
 }
 
+.nav-item {
+  display: inline-block;
+  color: #000;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #e6a596;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+  -webkit-transition: width .3s;
+  transition: width .3s;
+}
+
 @media (max-width: 950px) {
   .page-section {
     width: 85%;
@@ -121,7 +146,7 @@ header .header-container nav li {
   padding: 10px;
   margin: 0 8px;
   display: inline;
-  font-size: 25px;
+  font-size: 16px;
 }
 
 header .header-container nav .burger {
@@ -255,6 +280,7 @@ header .header-container nav .show p {
 .hero .hero-text .hero-heading {
   font-size: 50px;
   font-weight: 500;
+  line-height: 50px;
 }
 
 .hero .hero-text .hero-p {
@@ -552,9 +578,9 @@ footer .footer-container .footer-container-top .footer-logo img {
 
 footer .footer-container .footer-container-top .footer-nav a {
   color: white;
-  padding: 10px;
-  margin: 0 10px;
-  font-size: 25px;
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 16px;
 }
 
 footer .footer-container .footer-container-bottom {
