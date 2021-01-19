@@ -1,0 +1,125 @@
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15vh;
+    .header-container {
+        width: 75%;
+        height: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .header-logo {
+            padding: 5px;
+            img {
+                width: 250px;
+            }
+        }
+        nav {
+            display: flex;
+            flex-direction: row;
+         li {
+            padding: 10px;
+            margin:0 8px;
+            display: inline;
+            font-size: 25px;
+        }
+    .burger{
+            display: none;
+            cursor: pointer;
+         
+        }
+
+    .mobile-nav {
+        position: absolute;
+    
+        // border: 1px solid black;
+        background-color: black;
+        opacity: 0.9;
+        width: 100vw;
+        height: 0;
+        top: 15vh;
+        left: 0;
+        transition: 1s ease-in;
+        overflow: hidden;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-evenly ;
+        color: white;
+        a {
+            color: white;
+        }
+    }
+    .show {
+        // transform: translateY(30vh);
+        height: 30vh;
+        display: none;
+        color: white;
+        p {
+            color: white;
+        }
+        
+    }
+        }
+    }
+
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+//tablet
+@media (max-width:950px) {
+ header {.header-container {
+     width: 85%;
+ }}
+}
+//mobile 
+@media (max-width:700px) {
+    header {
+        .header-container 
+        {
+        width: 90%;
+        .header-logo {
+            img {
+          width: 200px;  
+        }
+    }
+        nav {
+            ul {
+                display: none;
+            }
+        .burger{
+                display: block;
+            }
+        .mobile-nav {
+            display: flex;
+        }
+        .show {
+            display: flex;
+        }
+        }
+         }
+}
+}

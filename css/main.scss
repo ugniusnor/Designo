@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+body,
+body * {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'Jost', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul, li {
+    text-decoration: none;
+    list-style: none;
+}
+.btn {
+    width: 180px;
+    height: 80px;
+    text-transform: uppercase;
+    background-color: #ffff;
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #e6a596;
+    color: white;
+}
+form, input, button {
+    outline: none;
+    border: none;
+}
+.page-section {
+    width: 75%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+@media (max-width:950px) {
+    .page-section {
+        width: 85%;
+    }
+   }
+   //mobile 
+   @media (max-width:700px) {
+   .page-section {
+       width: 100%
+   }
+   }
+@import "./header/header";
+@import "./hero/hero";
+@import "./services/services";
+@import "./homeAbout/about";
+@import "./footer/footer";
