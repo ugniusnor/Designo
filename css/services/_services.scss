@@ -49,18 +49,18 @@
     }
     
     .web-design {
-       background-image: url("/assets/home/desktop/image-web-design-large.jpg");
+       background-image: url("./assets/home/desktop/image-web-design-large.jpg");
         grid-area: web;
         
     }
     .app {
-        background-image: url("/assets/home/desktop/image-app-design.jpg");
+        background-image: url("./assets/home/desktop/image-app-design.jpg");
 
        
         grid-area:app;
     }
     .design {
-        background-image: url("/assets/home/desktop/image-graphic-design.jpg");
+        background-image: url("./assets/home/desktop/image-graphic-design.jpg");
         grid-area: design;
     }
 }
