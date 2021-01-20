@@ -16,7 +16,8 @@ ul, li {
     text-decoration: none;
     list-style: none;
 }
-.btn {
+.btn {    margin-bottom: 100px;
+
     width: 180px;
     height: 80px;
     text-transform: uppercase;
@@ -43,6 +44,7 @@ form, input, button {
 .page-section {
     width: 75%;
     margin: 100px auto;
+    max-width: 1800px;
     // margin-bottom: 100px;
 
 }

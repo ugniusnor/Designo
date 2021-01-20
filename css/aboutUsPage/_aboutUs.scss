@@ -5,20 +5,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.about-texts {
-    font-weight: 400;
-    width: 40%;
-    margin: 0 auto;
-    color: white;
-    h3 {
-        font-size: 50px;
-        font-weight: 500;
-        line-height: 50px;
-    }
-    p {
-        margin: 30px 0;
-        line-height: 30px;
+    .about-texts {
+        font-weight: 400;
+        width: 40%;
+        margin: 0 auto;
+        color: white;
+        h3 {
+            font-size: 50px;
+            font-weight: 500;
+            line-height: 50px;
+        }
+        p {
+            margin: 30px 0;
+            line-height: 30px;
+        }
     }
 }
 .about-us {
@@ -42,6 +42,7 @@
     }
 }
 .talent-card {
+  
     border-radius: 20px;
     width: 100%;
     background-color: #fdf3f0;
@@ -67,6 +68,8 @@
 }
 
 .about-locations {
+    margin: 0 ;
+    height: 380px;
     .btn {
         background-color: #e7816b;
         height: 60px;
@@ -78,6 +81,7 @@
 }
 
 .real-card {
+    margin-bottom: 250px;
     flex-direction: row;
     background-image: url("../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
     background-position: bottom;
@@ -86,3 +90,45 @@
         background-image: url("../assets/about/desktop/image-real-deal.jpg");
     }
 }
+
+
+@media (max-width:950px) {
+    .about-footer {
+        margin-top: 200px;
+    }
+    .about-us-section {
+        width: 100%;
+        border-radius: 0;
+        height: auto;
+        margin: 0 0;
+        .about-us-card {
+            height: 700px;
+            border-radius: 0;
+            flex-direction: column-reverse;
+            .about-texts {
+                width: 75%;
+                text-align: center;
+                height: 700px;
+            }
+            .about-images {
+                width: 100%;
+                margin-bottom: 40px;
+                border-radius: 0;
+            }
+            .talent-images {
+                width: 100%;
+                margin-bottom: 40px;
+                border-radius: 0;
+            }
+        }
+    }
+   }
+   //mobile 
+   @media (max-width:700px) {
+    .about-footer {
+        margin-top: 200px;
+    }
+   .page-section {
+       width: 100%
+   }
+   }
