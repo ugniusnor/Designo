@@ -722,7 +722,7 @@ footer .footer-container .footer-container-bottom .footer-socials img {
 }
 
 .about-us {
-  background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-image: url("../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
   background-position: left top;
   background-repeat: no-repeat;
   background-color: #e7816b;
@@ -735,7 +735,7 @@ footer .footer-container .footer-container-bottom .footer-socials img {
   border-bottom-right-radius: 20px;
   height: 100%;
   width: 40%;
-  background-image: url("../../assets/about/desktop/image-about-hero.jpg");
+  background-image: url("../assets/about/desktop/image-about-hero.jpg");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -765,7 +765,7 @@ footer .footer-container .footer-container-bottom .footer-socials img {
   border-bottom-left-radius: 20px;
   height: 100%;
   width: 40%;
-  background-image: url("../../assets/about/desktop/image-world-class-talent.jpg");
+  background-image: url("../assets/about/desktop/image-world-class-talent.jpg");
   background-position: right;
   background-size: cover;
   background-repeat: no-repeat;
@@ -786,12 +786,12 @@ footer .footer-container .footer-container-bottom .footer-socials img {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-image: url("../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
   background-position: bottom;
   background-size: 70%;
 }
 
 .real-card .talent-images {
-  background-image: url("../../assets/about/desktop/image-real-deal.jpg");
+  background-image: url("../assets/about/desktop/image-real-deal.jpg");
 }
 /*# sourceMappingURL=main.css.map */
