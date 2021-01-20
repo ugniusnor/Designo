@@ -55,8 +55,7 @@ form, input, button {
 
 .page-section {
   width: 75%;
-  margin: 0 auto;
-  margin-bottom: 100px;
+  margin: 100px auto;
 }
 
 .nav-item {
@@ -143,7 +142,7 @@ header .header-container nav {
 }
 
 header .header-container nav li {
-  padding: 10px;
+  padding: 0px;
   margin: 0 8px;
   display: inline;
   font-size: 16px;
@@ -219,6 +218,14 @@ header .header-container nav .show p {
 @media (max-width: 950px) {
   header .header-container {
     width: 85%;
+  }
+  header .header-container .header-logo img {
+    width: 150px;
+  }
+  header .header-container nav ul li {
+    letter-spacing: 1px;
+    margin: 0 4px;
+    font-size: 14px;
   }
 }
 
@@ -533,7 +540,7 @@ header .header-container nav .show p {
 
 footer {
   width: 100%;
-  height: 55vh;
+  height: 65vh;
   background-color: #1d1d1f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -545,9 +552,9 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 footer .footer-container {
@@ -650,6 +657,10 @@ footer .footer-container .footer-container-bottom .footer-socials img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  footer .footer-container .footer-container-top .footer-nav a {
+    margin: 0;
+    text-align: center;
+  }
   footer .footer-container .footer-container-bottom {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -675,5 +686,112 @@ footer .footer-container .footer-container-bottom .footer-socials img {
             align-items: center;
     margin: 40px 0;
   }
+}
+
+.about-us-card {
+  width: 100%;
+  height: 100%;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-texts {
+  font-weight: 400;
+  width: 40%;
+  margin: 0 auto;
+  color: white;
+}
+
+.about-texts h3 {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 50px;
+}
+
+.about-texts p {
+  margin: 30px 0;
+  line-height: 30px;
+}
+
+.about-us {
+  background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-color: #e7816b;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.about-us .about-images {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  height: 100%;
+  width: 40%;
+  background-image: url("../../assets/about/desktop/image-about-hero.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.talent-card {
+  border-radius: 20px;
+  width: 100%;
+  background-color: #fdf3f0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  height: 650px;
+}
+
+.talent-card .about-texts {
+  color: #333136;
+}
+
+.talent-card .about-texts h3 {
+  color: #e7816b;
+}
+
+.talent-card .talent-images {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 100%;
+  width: 40%;
+  background-image: url("../../assets/about/desktop/image-world-class-talent.jpg");
+  background-position: right;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about-locations .btn {
+  background-color: #e7816b;
+  height: 60px;
+  color: white;
+}
+
+.about-locations .btn:hover {
+  opacity: 0.7;
+}
+
+.real-card {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+  background-position: bottom;
+  background-size: 70%;
+}
+
+.real-card .talent-images {
+  background-image: url("../../assets/about/desktop/image-real-deal.jpg");
 }
 /*# sourceMappingURL=main.css.map */

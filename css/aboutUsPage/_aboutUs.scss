@@ -1,0 +1,88 @@
+.about-us-card {
+    width: 100%;
+    height: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-texts {
+    font-weight: 400;
+    width: 40%;
+    margin: 0 auto;
+    color: white;
+    h3 {
+        font-size: 50px;
+        font-weight: 500;
+        line-height: 50px;
+    }
+    p {
+        margin: 30px 0;
+        line-height: 30px;
+    }
+}
+.about-us {
+    background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-color: #e7816b;
+    border-radius: 20px;
+    width: 100%;
+ 
+    .about-images {
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        height: 100%;
+        width: 40%;
+        background-image: url("../../assets/about/desktop/image-about-hero.jpg");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    }
+}
+.talent-card {
+    border-radius: 20px;
+    width: 100%;
+    background-color: #fdf3f0;
+    flex-direction: row-reverse;
+    height: 650px;
+    .about-texts {
+        h3 {
+            color: #e7816b;
+
+        }
+        color: #333136;
+    }
+    .talent-images {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        height: 100%;
+        width: 40%;
+        background-image: url("../../assets/about/desktop/image-world-class-talent.jpg");
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.about-locations {
+    .btn {
+        background-color: #e7816b;
+        height: 60px;
+        color: white;
+        &:hover {
+            opacity: 0.7;
+        }
+    }
+}
+
+.real-card {
+    flex-direction: row;
+    background-image: url("../../assets/about/desktop/bg-pattern-hero-about-desktop.svg");
+    background-position: bottom;
+    background-size: 70%;
+    .talent-images {
+        background-image: url("../../assets/about/desktop/image-real-deal.jpg");
+    }
+}

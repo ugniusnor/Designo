@@ -42,8 +42,9 @@ form, input, button {
 }
 .page-section {
     width: 75%;
-    margin: 0 auto;
-    margin-bottom: 100px;
+    margin: 100px auto;
+    // margin-bottom: 100px;
+
 }
 
 
@@ -89,3 +90,4 @@ form, input, button {
 @import "./services/services";
 @import "./homeAbout/about";
 @import "./footer/footer";
+@import "./aboutUsPage/aboutUs"

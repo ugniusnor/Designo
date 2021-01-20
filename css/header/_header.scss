@@ -21,7 +21,7 @@ header {
             display: flex;
             flex-direction: row;
          li {
-            padding: 10px;
+            padding: 0px;
             margin:0 8px;
             display: inline;
             font-size: 16px;
@@ -93,7 +93,22 @@ header {
 @media (max-width:950px) {
  header {.header-container {
      width: 85%;
+     .header-logo {
+         img {
+             width: 150px;
+         }
+     }
+     nav {
+         ul {
+            li {
+                letter-spacing: 1px;
+                margin: 0 4px;
+                font-size: 14px;
+            }
+         }
+     }
  }}
+
 }
 //mobile 
 @media (max-width:700px) {
@@ -109,6 +124,8 @@ header {
         nav {
             ul {
                 display: none;
+            
+         
             }
         .burger{
                 display: block;

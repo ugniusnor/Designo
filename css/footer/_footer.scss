@@ -1,11 +1,11 @@
 footer {
 width: 100%;
-height: 55vh;
+height: 65vh;
 background-color: #1d1d1f;
 display: flex;
 align-items: center;
 flex-direction: column;
-justify-content: center;
+justify-content: flex-end;
   .footer-container {
     color: white;
       height: 65%;
@@ -81,6 +81,10 @@ justify-content: center;
                 margin-top: 30px;
                 display: flex;
                 flex-direction: column;
+                a {
+                    margin: 0;
+                    text-align: center;
+                }
             }
         }
     .footer-container-bottom {
