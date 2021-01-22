@@ -1,7 +1,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out my job listing project
+Thanks for checking out my multi-page Website for a fake 'Designo' company
 
 
 ## The goal of this project
