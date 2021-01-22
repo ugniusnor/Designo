@@ -1,0 +1,118 @@
+.locations-card {
+    
+    
+    height: 350px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    grid-template-areas: "texts map";
+    gap: 30px;
+    .location-grid-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .texts {
+        grid-area: texts;
+        height: 100%;
+        border-radius: 20px;
+        background-color: #fdf3f0;
+
+        .card-heading {
+            width: 80%;
+            font-weight: bold;
+            color: #E7816B;
+            font-size: 40px;
+        } 
+        .card-contacts {
+            width: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .texts-heading {
+                font-weight: bold;
+            }
+            p {
+                font-size: 20px;
+                margin: 10px 0;
+            }
+
+        }
+     .left {
+         width: 45%;
+     }
+     .right {
+         width: 45%;
+     }
+    }
+    .map {
+        grid-area: map;
+        height: 100%;
+        background-image: url("../assets/locations/tablet/image-map-canada.png");
+        border-radius: 20px;
+    }
+}
+.australia {
+    grid-template-areas: "map texts";
+    grid-template-columns: 1fr 70%;
+}
+.uk {
+    margin-bottom: 250px;
+}
+@media (max-width:1150px) {
+   .locations-card {
+       gap: 0;
+       height: 800px;
+       grid-template-columns: 1fr;
+       width: 85%;
+       grid-template-areas: "map"
+                            "texts";
+   }
+   .australia {
+    grid-template-areas: "texts" 
+    "map";
+    grid-template-columns: 1fr;
+    height: 800px;
+}
+   }
+   //mobile 
+   @media (max-width:700px) {
+    .locations-card {
+        gap: 0;
+        width: 100%;
+        border-radius: 0;
+        grid-template-areas: "texts"
+        "map";
+        .location-grid-item {
+            justify-content: space-evenly;
+        }
+        .texts {
+            .left, .right {
+                width: 100%;
+            }
+            
+            border-radius:0 ;
+            .card-contacts {
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+            }
+            p {text-align: center;}
+        }
+        .map {
+            border-radius: 0;
+        }
+    }
+   }
+.leaflet-control-attribution {
+
+    .leaflet-control {
+        display: none;
+    }
+}
+.leaflet-control-attribution{
+    display: none !important;
+}
