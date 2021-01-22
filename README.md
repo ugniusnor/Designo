@@ -13,3 +13,7 @@ Users should be able to:
 - Filter job listings based on the categories
 -Website should have modern feel, and look aesthetic 
 -Maps on 'Locations' page are interactive and made with LeafletJS
+
+#Deployment
+
+Website availalbe at: https://ugniusnor.github.io/Designo/
